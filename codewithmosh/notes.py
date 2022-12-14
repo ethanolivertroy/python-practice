@@ -61,3 +61,109 @@ msg = f'{first} [{last}] is a coder' # formatted string
 print(message)
 print(msg)
 
+# String Methods
+
+course = 'Python for Beginners'
+print(len(course)) #length function- it can count the number of items
+# len and print are general purpose functions and dont belong to anyone
+# methods belong to strings
+print (course.upper())
+print (course.lower())
+print(course.find('P'))
+print(course.find('Beginners'))
+print(course.replace('Beginners', 'Absolute Beginners')) #remember this is case-sensitive
+
+print('Python' in course) # will produce a Boolean value // The "in" operator
+
+# when a function belongs to something we refer to it as a method
+
+
+# Arithmetic Operations
+
+print (10 // 3) #will divide with an integer
+print (10 ** 3) #exponent
+
+x = 10
+x = x + 3
+print(x)
+
+x += 3
+
+print(x)
+
+x -= 6
+print(x)
+
+# Operator Precedence
+
+x = 10 + 3 * 2 #order of operations
+print(x)
+
+# Math functions
+
+x= 2.9
+print(round(x))
+print(abs(-2.9))
+
+import math
+
+
+math.ceil(2.9)
+
+
+# If Statements
+
+is_hot = False
+is_cold = False
+
+if is_hot:
+    print("It's a hot day")
+    print("Drink Plenty of water")
+elif is_cold: 
+    print("It's a cold day")
+    print("Wear Warm Clothes")
+else:
+    print("It's a lovely day")
+print("Enjoy your day")
+
+price_house = 1000000
+has_good_credit = True
+
+if has_good_credit:
+    down_payment = 0.1 * price_house
+else:
+    down_payment = 0.2 * price_house
+print(f"DownPayment: ${down_payment}")
+
+# logical operators
+
+has_high_income = False
+has_good_credit = True
+
+if has_high_income and has_good_credit:
+    print("eligible for loan")
+
+if has_high_income or has_good_credit:
+    print("eligible for loan")
+
+# AND : both
+# OR : at least one
+# NOT
+
+# Comparison Operators
+
+temperature = 30 
+
+if temperature > 30:
+    print("It's a hot day")
+else:
+    print("It's not a hot day")
+
+name = "J"
+
+if len(name) < 3:
+    print("Name must be at least 3 chars!")
+elif len(name) > 50:
+    print("Name is max of 50 chars")
+else:
+    print("Name looks good")
