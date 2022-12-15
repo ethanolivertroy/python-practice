@@ -167,3 +167,50 @@ elif len(name) > 50:
     print("Name is max of 50 chars")
 else:
     print("Name looks good")
+
+    # Weight converter project
+
+weight = int(input('Weight: '))
+unit = input('(L)bs or (K)g')
+if unit.upper() == "L":
+    converted = weight * 0.45
+    print(f"You are {converted} kilos")
+elif unit.upper() == "K":
+    converted = weight / 0.45
+    print(f"You are {converted} pounds")
+
+
+
+
+    # While Loop
+
+i = 1
+while i <= 5:
+    print(i)
+    i = i + 1
+print("Done")
+
+
+# While Loop
+
+i = 1
+while i <= 5:
+    print('*' * i)
+    i = i + 1
+print("Done")
+
+
+# Guessing Game
+
+secret_number = 9
+guess_count = 0
+guess_limit = 3
+while guess_count < guess_limit:
+   guess = int(input('Guess: '))
+   guess_count += 1
+   if guess == secret_number:
+        print('You won!')
+        break
+else:
+    print('Sorry, you failed.')
+
